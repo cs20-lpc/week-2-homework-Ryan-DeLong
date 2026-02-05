@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
 
-// TODO: Write a function template myMax
+// Function template
+template <typename T>
+T myMax(T a, T b) {
+    return (a > b) ? a : b;
+}
 
 int main() {
     cout << myMax(3, 7) << endl;
@@ -9,3 +13,4 @@ int main() {
     cout << myMax(string("apple"), string("banana")) << endl;
     return 0;
 }
+
